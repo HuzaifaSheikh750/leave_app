@@ -35,7 +35,7 @@ const MainMenu = () => {
           <li className="d-block d-lg-none">
             <div className="logo">
               <Link href="/" className="d-block">
-                <img src="/images/logo/logo_01.png" alt="" width={95} />
+                <img src="/images/logo/Kaipe-logo.png" alt="" width={170} />
               </Link>
             </div>
           </li>
@@ -212,8 +212,8 @@ const MainMenu = () => {
         {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
-            <Link href="/contact" className="btn-twentyOne fw-500 tran3s">
-              Contact us
+            <Link href="https://kspcs.powerappsportals.com/customer-landing/" target="_blank" className="btn-twentyOne fw-500 tran3s">
+              Support Portal
             </Link>
           </div>
         </div>

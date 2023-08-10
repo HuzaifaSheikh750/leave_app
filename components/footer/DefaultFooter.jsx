@@ -25,6 +25,7 @@ const   DefaultFooter = () => {
             <div className="col-lg-4  md-mt-30 md-mb-30">
             <h4 style={{marginTop:"15px", color:"#588AE8"}}>Our Address</h4>
                 <p className="fs-17" style={{alignItems:""}}><i class="fa fa-house" style={{marginRight:"10px", marginBottom:"10px"}}></i>590 Madison Avenue 21st Floor Manhattan, NY 10022 USA.</p>
+                <p className="fs-17"><i class="fa fa-house" style={{marginRight:"10px", marginBottom:"10px"}}></i> 415 W. Golf Rd Suite 55-K (607 SF) Arlington Heights, IL 60005. </p>
                 <p className="fs-17"><i class="fa fa-house" style={{marginRight:"10px", marginBottom:"10px"}}></i> Suite#213 Sumya Business Avenue MACHS Karachi, Pakistan. </p>
                 {/* home icons */}
 

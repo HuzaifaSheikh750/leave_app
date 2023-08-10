@@ -3,7 +3,8 @@ import BlockContact from "../components/contact/BlockContact";
 import ContactForm from "../components/contact/ContactForm";
 import Map from "../components/contact/Map";
 import DefaultFooter from "../components/footer/DefaultFooter";
-import DefaulHeader from "../components/header/DefaulHeader";
+// import DefaulHeader from "../components/header/DefaulHeader";
+import DefaulHeader from "../components/home-page/home-13/Header";
 import Subsribe from "../components/home-page/home-7/Subsribe";
 import Link from "next/link";
 import Social from "../components/home-page/home-7/Social";
@@ -17,30 +18,31 @@ const contact = () => {
 
       <DefaulHeader />
 
-      <div className="fancy-feature-seven pt-200 lg-pt-100">
-        <div className="container" style={{marginTop:"150px"}}>
+      <div className="fancy-feature-seven pt-200 lg-pt-100 expensefeature">
+        <div className="container" style={{marginTop:"100px"}}>
           <div className="row align-items-center">
-            <div className="col-xl-6 col-lg-5" data-aos="fade-right">
+            <div className="col-xl-8 col-lg-8"  style={{marginTop:"-60px"}} data-aos="fade-right">
               <div className="title-style-four text-center text-lg-start">
-                <h2 className="main-title fw-500 tx-dark m0">
-                  Our Application <span>Benefits.</span>
+                <h2 className="main-title fw-500 tx-dark m0" style={{color:"white"}}>
+                  Our Application <span>Features.</span>
                 </h2>
+                <p className="text-lg text-center text-lg-start md-pt-30 m0" style={{fontStyle:"italic", color:"white"}}>
+              Integrating the Employee Leave Management app with Dynamics 365 offers businesses a wide 
+              range of benefits. Some of the key benefits are:
+              </p>
               </div>
               {/* /.title-style-four */}
             </div>
             {/* End .col-6 */}
-            <div className="col-lg-6 ms-auto" data-aos="fade-left">
-              <p className="text-lg text-center text-lg-start md-pt-30 m0" style={{fontStyle:"italic"}}>
-              Integrating the Employee Leave Management app with Dynamics 365 offers businesses a wide 
-              range of benefits. Some of the key benefits are:
-              </p>
-            </div>
+            {/* <div className="col-lg-6 ms-auto" data-aos="fade-left">
+             
+            </div> */}
             {/* End .col-6 */}
           </div>
         </div>
         {/* End .container */}
 
-        <div className="container pt-50 lg-pt-10">
+        <div className="container pt-50 lg-pt-10" style={{backgroundColor:"white",  marginTop:"50px", borderRadius:"30px", marginBottom:"200px"}}>
           <div className="row gx-xxl-5">
             <Features />
           </div>

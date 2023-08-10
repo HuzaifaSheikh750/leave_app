@@ -2893,7 +2893,7 @@ body .btn-twentyFive:hover {
   left: 0;
   top: 0;
   height: 66%;
-  background: url(../images/assets/bg-4.svg) no-repeat bottom center;
+  background: url(../images/media//backfront.png) no-repeat bottom center;
   background-size: cover;
   z-index: -1;
 }
@@ -9817,4 +9817,28 @@ body .btn-twentyFive:hover {
 }
 .card-style-twentyFour .icon {
   height: 42px;
+}
+
+.expensefeature{
+  background-image: url(../images/features.png);
+  // background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: center center;
+  background-size: 100% 35%;
+}
+
+@media (max-width: 1200px) {
+  .mobileScreen{
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .mainHeading{
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 991px) {
+ .main-img{
+display: block;
+ }
 }

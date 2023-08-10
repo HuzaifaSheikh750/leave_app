@@ -7,7 +7,7 @@ const Hero = () => {
         <strong className="fw-500">Offer</strong> is going on till friday,
         $1.99/mo. <i className="fas fa-chevron-right" />
       </a> */}
-      <h3 className="hero-heading fw-bold mt-45 mb-40 md-mt-20" style={{fontSize:"60px"}}>
+      <h3 className="hero-heading fw-bold mt-45 mb-40 md-mt-20 mainHeading" style={{fontSize:"60px"}}>
       Making Employee Leaves Stress-free and Simple.
       </h3>
       <p className="text-md mb-50 lg-mb-30 pe-xxl-4" style={{fontStyle:"italic"}}>

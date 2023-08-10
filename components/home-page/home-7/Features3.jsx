@@ -82,7 +82,7 @@ const Features3 = () => {
 
       <div className="mobile-screen">
         <img
-          src="/images/media/img_17.png"
+          src="/images/media/mobileMain.png"
           alt="shape"
           className="lazy-img m-auto"
         />

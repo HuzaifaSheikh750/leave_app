@@ -19,7 +19,8 @@ import Herotitle from "../../components/home-page/home-12/Hero";
 import Testimonialquate from "../../components/home-page/home-2/Testimonial";
 import IntroVideo from "../../components/home-page/home-4/IntroVideo";
 import Counter from "../../components/home-page/home-4/Counter";
-
+import FancyBanner from "../../components/home-page/home-2/FancyBanner";
+import CopyrightFooter from '../../components/footer/CopyrightFooter2'
 const AppLanding = () => {
   return (
     <>
@@ -55,9 +56,10 @@ const AppLanding = () => {
           <div className="row gx-xxl-5 justify-content-center align-items-center">
             <div className="col-12">
               <img
-                style={{ width: "600px", height: "600px", marginTop:"50px", paddingRight:"50px" }}
+                style={{  marginTop:"50px", paddingRight:"50px" }}
                 src="/images/media/hamza2.png"
                 alt="media"
+                className="mobileScreen"
                 // className="lazy-img screen-one"
               />
             </div>
@@ -122,43 +124,37 @@ const AppLanding = () => {
         Feature Section Eight
         ============================================== 
         */}
-      <div className="fancy-feature-eight position-relative mt-225 xl-mt-150 md-mt-100">
+      {/* <div className="fancy-feature-eight position-relative mt-225 xl-mt-150 md-mt-100">
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-6 col-md-7 ms-auto order-lg-last">
               <Features2 />
-              {/* /.block-style-three */}
             </div>
           </div>
         </div>
-        {/* /.container */}
 
         <div className="illustration-holder">
           <img
             src="/images/media/img_15.png"
-            style={{width:"700px", height:"500px", marginLeft:"30px"}}
+            style={{ marginLeft:"30px"}}
             alt="media"
             className="lazy-img main-img"
           />
-          {/* <img
-            src="/images/media/img_16.png"
-            alt="media"
-            className="lazy-img shapes screen-one"
-          /> */}
+        
           <img
             src="/images/shape/shape_44.svg"
             alt="media"
             className="lazy-img shapes shape-one"
           />
         </div>
-        {/* /.illustration-holder */}
-      </div>
+      </div> */}
 
       {/* 
         =============================================
         Feature Section Nine
         ============================================== 
         */}
+        <FancyBanner/>
       {/* <div className="fancy-feature-nine position-relative pt-250 lg-pt-130">
         <div className="container">
           <div className="row align-items-center">
@@ -261,6 +257,13 @@ const AppLanding = () => {
           <Features3 />
           {/* /.wrapper */}
         </div>
+           <Link
+               href="/Features"
+              className="signup-btn-two fw-500 tran3s d-none d-lg-block"
+              style={{ marginTop:"50px", marginLeft:"auto", marginRight:"auto", marginBottom:"0px", height:"50px", width:"200px", borderRadius:"50px", textAlign:"center", paddingTop:"12px", border:"1px solid #000000",}}
+            >
+              See All Features
+        </Link>
       </div>
 
       {/*
@@ -549,7 +552,7 @@ const AppLanding = () => {
         <div className="bottom-footer mt-80 lg-mt-50">
           <div className="container">
             <div className="row" style={{marginBottom:"-50px"}}>
-              <div className="col-lg-4">
+              <div className="col-xl-4 col-lg-4">
                 <div className="logo d-flex justify-content-center justify-content-lg-start">
                   <Link href="/">
                     <img src="/images/logo/logo_03.png" alt="" width={200} height={45} style={{marginBottom:"25px", marginTop:"20px"}}/>
@@ -559,26 +562,12 @@ const AppLanding = () => {
                 <p style={{color:'white', marginTop:"-10px"}}>KAISPE has been providing solutions and services to customers using Microsoft Dynamics, Azure, Power platform, Oracle NetSuite, mobile and web app development.</p>
                 
                 <Social />
+               
               </div>
+              
               {/* End .col-lg-4 */}
 
-
-        <div className="col-lg-4 " style={{padding:"10px", paddingLeft:"30px"}}>
-          
-          <div >
-            <h5 className="footer-title fw-500" style={{color:"white", marginTop:"20px"}}>Our Address</h5>
-            <p className="fs-17" style={{color:"white", alignItems:"", marginTop:"15px"}}>
-            <i class="fa fa-house" style={{marginRight:"10px", marginBottom:"10px"}}></i>590 Madison Avenue 21st Floor Manhattan, NY 10022 USA.
-            </p>
-
-            <p className="fs-17" style={{color:"white"}}>
-            <i class="fa fa-house" style={{marginRight:"10px", marginBottom:"10px"}}></i>Suite#213 Sumya Business Avenue MACHS Karachi, Pakistan.
-            </p>
-
-           </div>
-         </div>
-
-              <div className="col-lg-3   md-mt-30 md-mb-30">
+              <div className="col-xl-4 col-lg-4 md-mt-30 md-mb-30">
                 <h5 className="footer-title fw-500" style={{color:"white", marginTop:"20px", marginBottom:"-20px"}}>Email </h5>
                  <br />
                  <a href="mailto:info@kaispe.com" className="email tran3s fs-17" style={{color:"white", marginTop:"15px"}}>
@@ -593,17 +582,36 @@ const AppLanding = () => {
             </a>
                 
               </div>
+        <div className="col-xl-4 col-lg-4" style={{padding:"10px", paddingLeft:"30px"}}>
+          
+          <div >
+            <h5 className="footer-title fw-500" style={{color:"white", marginTop:"20px"}}>Our Address</h5>
+            <p className="fs-17" style={{color:"white", alignItems:"", marginTop:"15px"}}>
+            <i class="fa fa-house" style={{marginRight:"10px", marginBottom:"10px"}}></i>590 Madison Avenue 21st Floor Manhattan, NY 10022 USA.
+            </p>
+            <p className="fs-17" style={{color:"white"}}>
+            <i class="fa fa-house" style={{marginRight:"10px", marginBottom:"10px"}}></i>415 W. Golf Rd Suite 55-K (607 SF) Arlington Heights, IL 60005.
+            </p>
+            <p className="fs-17" style={{color:"white"}}>
+            <i class="fa fa-house" style={{marginRight:"10px", marginBottom:"10px"}}></i>Suite#213 Sumya Business Avenue MACHS Karachi, Pakistan.
+            </p>
+
+           </div>
+         </div>
+
+        
             </div>
           </div>
         </div>
         {/* End button-footer */}
-
+        {/* <CopyrightFooter/> */}
         <img
           src="/images/assets/ils_01.svg"
           alt="illustration"
           className="lazy-img bg-illustration w-100 shapes"
         />
       </div>
+      
     </>
   );
 };

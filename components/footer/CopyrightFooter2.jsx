@@ -46,8 +46,8 @@ const IconItem = ({ icon, href }) => {
 
 const Footer = () => {
   return (
-    <div className="bottom-footer lg-pb-20 position-relative">
-      <div className="container">
+    <div className="bottom-footer lg-pb-20 position-relative" style={{marginBottom:"-100px"}}>
+      <div className="container" >
         <div className="row">
           <div className="col-lg-4 order-lg-0 mt-15">
             {/* <ul className="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
@@ -64,18 +64,17 @@ const Footer = () => {
             </ul> */}
           </div>
           <div className="col-lg-4 order-lg-1 mt-15">
-            <p className="copyright text-center m0">
+            <p className="copyright text-center m0" style={{ color:"black"}}>
             © {new Date().getFullYear()}{" "}
               <a
-                style={{ color: "blue", }}
-                href="https://themeforest.net/user/ib-themes"
+                style={{ color: "blue" }}
+                href="https://www.kaispe.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 
               >
                KAISPE 
-              </a>
-              {" "}
+              </a>{" "}
                 All Rights Reserved
             </p>
           </div>

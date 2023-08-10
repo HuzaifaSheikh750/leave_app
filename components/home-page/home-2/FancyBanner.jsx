@@ -4,26 +4,20 @@ const FancyBanner = () => {
   const bannerData = [
     {
       title: "TRSUTED SECURITY",
-      mainTitle: "Security you can trust blindly.",
+      mainTitle: "Leave Management App.",
       description:
-        "Lorem ipsum began as scrambled, Latin derived Cicero's 1st-century BC text De Finibus ubiquitous lorem ipsum passage.",
-      buttonLabel: "Click here to learn more",
-      illustration: "/images/assets/ils_06.png",
+        "KAISPE Employee Leave Management app offers customers an intuitive and user-friendly app that streamlines the entire leave management process, from submitting leave requests to reviewing them - all from one place and on the go. Our app leverages the cloud benefits of the Microsoft Power platform and SharePoint online, ensuring seamless and hassle-free leave management.",
+        descriptiontwo: " Our Leave Management App comes equipped with features such as leave policy rules, a flexible workflow engine, multi-language support, and a host of other unique features, all while offering a simple and easy-to-use interface. With our solution, customers can empower their employees to take control of their leave management process with a self-service roadmap.",	
+        descriptionthree:
+        "Experience the simplicity of the technology and the power of our app in transforming employee leave management and creating a happier, more efficient workplace.",
+
+        buttonLabel: "Click here to learn more",
+      illustration: "/images/media/twoMobile.png",
       illustrationAlt: "illustration",
       illustrationPosition: "right",
       aos: "fade-right",
     },
-    {
-      title: "SITE TRANSFER",
-      mainTitle: "Migration is super fast with no downtime.",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisci sed do eiusmod tempor incididunt ut labore et dolore magna ad minim veniam.",
-      buttonLabel: "",
-      illustration: "/images/assets/ils_07.png",
-      illustrationAlt: "illustration",
-      illustrationPosition: "left",
-      aos: "fade-left",
-    },
+    
   ];
 
   return (
@@ -33,42 +27,29 @@ const FancyBanner = () => {
           <div className="block-style-four mt-200 lg-mt-100" key={index}>
             <div className="row align-items-center">
               <div
-                className={`col-xl-5 col-lg-6 order-lg-${
-                  data.illustrationPosition === "left" ? "first" : "last"
-                }`}
+                className={`col-xl-6 col-lg-6 order-lg-left `}
                 data-aos={data.aos}
               >
                 <div className="title-style-eight">
-                  <div className="sc-title text-uppercase">{data.title}</div>
                   <h2 className="main-title tx-dark fw-bold">
                     {data.mainTitle}
                   </h2>
                 </div>
-                <p className="fs-20 lh-lg mt-35 lg-mt-20">{data.description}</p>
-                {data.buttonLabel !== "" && (
-                  <Link
-                    href="/pages-menu/about-us-v1"
-                    className="btn-fifteen fw-500 position-relative d-inline-flex align-items-center"
-                  >
-                    <span>{data.buttonLabel}</span>
-                    <img
-                      src="/images/icon/icon_69.svg"
-                      alt={data.illustrationAlt}
-                      className="ms-2"
-                    />
-                  </Link>
-                )}
+                <p className="fs-15 lh-lg mt-35 lg-mt-20">{data.description}</p>
+                <p className="fs-15 lh-lg mt-35 lg-mt-15">{data.descriptiontwo}</p>
+                <p className="fs-15 lh-lg mt-35 lg-mt-15">{data.descriptionthree}</p>
               </div>
+
+
               <div
-                className={`col-xl-7 col-lg-6 col-md-8 m-auto order-lg-${
-                  data.illustrationPosition === "left" ? "last" : "first"
-                }`}
+                className={`col-xl-6 col-lg-6 col-md-8 m-auto order-lg-first`}
                 data-aos={data.aos}
               >
                 <div className="illustration-holder md-mt-60">
                   <img
                     src={data.illustration}
                     alt={data.illustrationAlt}
+                    style={{ width: "1000px" , height:"500"}}
                     className="lazy-img"
                   />
                 </div>

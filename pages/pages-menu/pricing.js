@@ -3,6 +3,8 @@ import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
 import PricingTable from "../../components/pricing/Pricing";
 import Link from "next/link";
+// import IncludedPlan from "../../components/home-page/home-2/IncludedPlan";
+import PriceTable from "../../components/home-page/home-2/Pricing";
 
 const Pricing = () => {
   return (
@@ -31,7 +33,7 @@ const Pricing = () => {
                   Our Pricing
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  No hidden charges, Choose your plan.
+                Choose The Best Package As Per Your Requirements
                 </h2>
               </div>
             </div>
@@ -51,14 +53,18 @@ const Pricing = () => {
         Pricing Section Three
         =====================================================
         */}
-      <div className="pricing-section-three position-relative mt-50">
+      {/* <div className="pricing-section-three position-relative mt-50">
         <div className="container">
-          <PricingTable />
-          {/* /.pricing-table-area-three */}
+          <PriceTable />
         </div>
         <div className="shapes shape-one rounded-circle" />
         <div className="shapes shape-two rounded-circle" />
-      </div>
+      </div> */}
+       <div className="wrapper pricing-table-area-four m-auto pt-80 lg-pt-30" style={{paddingLeft:"100px", paddingRight:"100px"}}>
+            <div className="row">
+              <PriceTable />
+            </div>
+          </div>
       {/* /.pricing-section-three */}
 
       {/*
@@ -92,7 +98,7 @@ const Pricing = () => {
                       href="/contact"
                       className="btn-twentyOne fw-500 tran3s"
                     >
-                      Get Started Today!
+                      contact us    
                     </Link>
                   </div>
                 </div>

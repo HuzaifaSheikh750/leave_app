@@ -1,23 +1,8 @@
-const Pricing = () => {
+const   Pricing = () => {
   const plans = [
     {
-      icon: "/images/icon/icon_56.svg",
-      plan: "Basic",
-      features: [
-        "Leave application",
-        "Hierarchy based approval workflow",
-        "Unlimited number of users",
-        "Notifications",
-        "Recall functionality",
-      ],
-      price: "$12.00",
-      user: "/user/month",
-      trial: "up to 5-10 users",
-      className: "pr-column pr-one",
-    },
-    {
       icon: "/images/icon/icon_57.svg",
-      plan: "Basic",
+      plan: "Basic Plan",
       features: [
         "Leave application",
         "Hierarchy based approval workflow",
@@ -27,28 +12,12 @@ const Pricing = () => {
       ],
       price: "$9.00",
       user: "/user/month",
-      trial: "Above 10 users",
+      trial: "For Above 10 users",
       className: "pr-column pr-two",
     },
     {
-      icon: "/images/icon/icon_58.svg",
-      plan: "Advanced",
-      features: [
-        "Leave quota management",
-        "Multi site",
-        "Multi language",
-        "Delegation of Authoriy",
-        "My Approvals workspace",
-        "Approval history",
-      ],
-      price: "$14.00",
-      user: "/user/month",
-      trial: "up to 5-10 users",
-      className: "pr-column  active",
-    },
-    {
       icon: "/images/icon/icon_59.svg",
-      plan: "Advanced",
+      plan: "Advanced Plan",
       features: [
         "Leave quota management",
         "Multi site",
@@ -59,9 +28,42 @@ const Pricing = () => {
       ],
       price: "$10.00",
       user: "/user/month",
-      trial: "Above 10 users",
+      trial: "For Above 10 users",
       className: "pr-column pr-three",
     },
+    {
+      icon: "/images/icon/icon_56.svg",
+      plan: "Basic Plan",
+      features: [
+        "Leave application",
+        "Hierarchy based approval workflow",
+        "Unlimited number of users",
+        "Notifications",
+        "Recall functionality",
+      ],
+      price: "$12.00",
+      user: "/user/month",
+      trial: "For up to 5-10 users",
+      className: "pr-column pr-one",
+    },
+   
+    {
+      icon: "/images/icon/icon_58.svg",
+      plan: "Advanced Plan",
+      features: [
+        "Leave quota management",
+        "Multi site",
+        "Multi language",
+        "Delegation of Authoriy",
+        "My Approvals workspace",
+        "Approval history",
+      ],
+      price: "$14.00",
+      user: "/user/month",
+      trial: "For up to 5-10 users",
+      className: "pr-column  active",
+    },
+    
   ];
   // const plans2 = [
   //   {
@@ -156,8 +158,8 @@ const Pricing = () => {
               {plans.map((plan, index) => (
                 <div className="col-lg-3 col-sm-6" key={index}>
                   <div className={`pr-column ${plan.className}`}>
-                    <img src={plan.icon} alt="" className="icon" />
-                    <div className="plan tx-dark">{plan.plan}</div>
+                    {/* <img src={plan.icon} alt="" className="icon" /> */}
+                    <div className="plan tx-dark" style={{fontSize:"25px"}}>{plan.plan}</div>
                     <div className="pr-body">
                       <ul className="style-none text-start">
                         {plan.features.map((feature, index) => (
