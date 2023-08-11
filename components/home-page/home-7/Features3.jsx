@@ -72,6 +72,7 @@ const Features3 = () => {
                 src={icon.src}
                 alt={icon.alt}
                 className={icon.className}
+                
               />
             ))}
           </div>
@@ -85,6 +86,7 @@ const Features3 = () => {
           src="/images/media/mobileMain.png"
           alt="shape"
           className="lazy-img m-auto"
+          style={{ width: "80%", height: "60%" }}
         />
       </div>
       <img

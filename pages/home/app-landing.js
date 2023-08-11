@@ -249,7 +249,7 @@ const AppLanding = () => {
                 </h2>
                 <p style={{marginTop:"30px", fontStyle:"italic"}}>KAISPE Employee Leave Management solution offers a wide range of features to make the leave management process easier and more efficient. Some of the key features of our solution are:</p>
               </div>
-              {/* /.title-style-four */}
+            
             </div>
           </div>
           {/* End .row */}

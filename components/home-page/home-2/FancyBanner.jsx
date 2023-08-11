@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const FancyBanner = () => {
+const   FancyBanner = () => {
   const bannerData = [
     {
       title: "TRSUTED SECURITY",
@@ -45,11 +45,11 @@ const FancyBanner = () => {
                 className={`col-xl-6 col-lg-6 col-md-8 m-auto order-lg-first`}
                 data-aos={data.aos}
               >
-                <div className="illustration-holder md-mt-60">
+                <div className="illustration-holder md-mt-60" style={{width:"110%", height:"100%"}}>
                   <img
                     src={data.illustration}
                     alt={data.illustrationAlt}
-                    style={{ width: "1000px" , height:"500"}}
+                    style={{ width: "100%" , height:"100%", marginLeft:"-100px"}}
                     className="lazy-img"
                   />
                 </div>
